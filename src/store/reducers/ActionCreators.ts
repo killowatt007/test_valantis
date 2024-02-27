@@ -9,12 +9,16 @@ type FilterType = {
   product?: string
 }
 
+const date = new Date()
 const md5 = require('md5');
+
+const timestamp = date.getUTCFullYear()+('0'+(date.getUTCMonth()+1)).slice(-2)+('0'+date.getUTCDate()).slice(-2)
+
 const config: any = {
   link:' https://api.valantis.store:41000',
   method: 'post',
   headers: [
-    ['X-Auth', md5('Valantis_'+'20240227')],
+    ['X-Auth', md5('Valantis_'+timestamp)],
     ["Content-Type", "application/json"]
   ]
 }
