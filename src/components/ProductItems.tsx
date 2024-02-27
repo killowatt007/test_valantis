@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Affix, Button, Input, Select, Space, Table } from 'antd';
-import type { TableColumnsType, TableProps } from 'antd';
+import type { TableColumnsType } from 'antd';
 import { IProduct } from '../models/IProduct';
 import { SearchOutlined } from '@ant-design/icons';
 
